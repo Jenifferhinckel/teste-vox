@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  @include('header')
-  <body class="d-flex align-items-center py-4 bg-body-tertiary h-100">
+  @include('head')
+  <body class="h-100">
+    @include('header')
     <main class="form-signin w-100 m-auto p-4" style="max-width: 330px;">
     @if($errors->any())
         <div class="alert alert-danger">{{ $errors->first() }}</div>

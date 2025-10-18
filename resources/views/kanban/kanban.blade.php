@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-@include('header')
+@include('head')
 <body>
+@include('header')
 <div class="container mt-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <a href="{{ route('kanban.create') }}" class="btn btn-primary mb-4">Criar quadro</a>
+    {{-- <div class="d-flex justify-content-between align-items-center mb-4">
         <a href="{{ route('category.create') }}" class="btn btn-primary mb-4">Criar categoria</a>
+        <a href="{{ route('kanban.create') }}" class="btn btn-primary mb-4">Criar quadro</a>
         <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button type="submit" class="btn btn-danger">Sair</button>
         </form>
-    </div>
+    </div> --}}
     @if($success = session('success'))
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -68,6 +69,7 @@
     </div>
 </div>
 </body>
+@include('footer')
 <script>
     document.querySelectorAll('.delete-form').forEach(form => {
         form.addEventListener('submit', function(e) {

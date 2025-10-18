@@ -46,7 +46,7 @@
         <button class="btn btn-primary w-100 py-2 mt-2" type="submit">
           Entrar
         </button>
-        <p class="mt-5 mb-3 text-body-secondary text-center">&copy; 2025 Jeniffer Hinckel.</p>
+        <p class="mt-5 mb-3 text-body-secondary text-center">&copy; 2025 Jeniffer Hinckel</p>
       </form>
     </main>
   </body>

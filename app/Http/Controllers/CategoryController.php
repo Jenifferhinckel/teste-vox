@@ -91,11 +91,11 @@ class CategoryController extends Controller
         $category = Category::find($id);
 
         if (!$category) {
-            return redirect()->route('kanban.index')->with('error', 'Categoria não encontrada.');
+            return response()->json(['error' => 'Categoria não encontrada.'], 404);
         }
 
         $category->delete();
 
-        return redirect()->route('kanban.index')->with('success', 'Categoria excluída com sucesso!');
+        return response()->json(['message' => 'Categoria excluída com sucesso.']);
     }
 }

@@ -42,6 +42,6 @@ Acesse o sistema no navegador:
 
 Login de teste:
 ```text
-E-mail: teste@teste.com
+E-mail: test@example.com
 Senha: 10203040
 ```
